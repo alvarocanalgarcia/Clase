@@ -1,0 +1,29 @@
+
+language: java
+
+jdk:
+  - oraclejdk8
+
+script:
+ - git checkout tags/original .travis.yml
+ - git checkout tags/original pom.xml
+ - git checkout tags/original src/test/java/TestsActividadPorCreditos.java
+ - git checkout tags/original src/test/java/TestsActividadPorCreditos.java
+ - git checkout tags/original src/test/java/TestsActividadPorNombre.java
+ - git checkout tags/original src/test/java/TestsArrList.java
+ - git checkout tags/original src/test/java/TestsAsignatura.java
+ - git checkout tags/original src/test/java/TestsCalificacion.java
+ - git checkout tags/original src/test/java/TestsConvalidacion.java
+ - git checkout tags/original src/test/java/TestsEstudiante.java
+ - git checkout tags/original src/test/java/TestsEstudiantePorCuasi.java
+ - git checkout tags/original src/test/java/TestsLinkList.java
+ - git checkout tags/original src/test/java/TestsMatricula.java
+ - git checkout tags/original src/test/java/TestsMatriculaPorCuasiEstudiante.java
+ - git checkout tags/original src/test/java/TestsMatriculaPorCurso.java
+ - git checkout tags/original src/test/java/TestsMatriculaPorNombreActividad.java
+ - git checkout tags/original src/test/java/TestsMatriculaPorOrdenMatricula.java
+ - git checkout tags/original src/test/java/TestsNode.java
+ - git checkout tags/original src/test/java/TestsReconocimiento.java
+ - git checkout tags/original src/test/java/TestsSortedSet.java
+ - mvn package
+
