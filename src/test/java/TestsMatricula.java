@@ -50,7 +50,7 @@ public class TestsMatricula {
 		Matricula m1 = new Matricula(act1, est1, Curso.C1617,OrdenMatricula.M3,21.21);
 		Matricula m2 = new Matricula(act2, est1, Curso.C1718,OrdenMatricula.M3,10);
 			
-		assertEquals("Precio familia no numerosa, tercera de asignatura matricula es precio por nº creditos por 4.4",559.944, m1.getPrecio(),0.0001);
+		assertEquals("Precio familia no numerosa, tercera de asignatura matricula es precio por nº creditos por 4.4",509.04, m1.getPrecio(),0.0001);
 		assertEquals("Precio familia no numerosa, tercera matricula de reconocimiento es precio por nº creditos por 4.4 por 0.75",66, m2.getPrecio(),0.0001);
 		 
 	}
@@ -86,7 +86,7 @@ public class TestsMatricula {
 			
 		assertEquals("Precio familia numerosa, primera matricula de asignatura es precio por nº creditos por 0.5 ",63.63, m1.getPrecio(),0.0001);
 		assertEquals("Precio familia numerosa, segunda matricula de reconocimiento es precio por nº creditos por 2 por 0.5 por 0.75",15, m2.getPrecio(),0.0001);
-		assertEquals("Precio familia numerosa, tercera matricula de asignatura es precio por nº creditos por 4.4 por 0.5",233.31, m3.getPrecio(),0.0001);
+		assertEquals("Precio familia numerosa, tercera matricula de asignatura es precio por nº creditos por 4.4 por 0.5",212.10, m3.getPrecio(),0.0001);
 		assertEquals("Precio familia numerosa, cuarta matricula de reconociemiento es precio por nº creditos por 6 por 0.5 por 0.75",90, m4.getPrecio(),0.0001);
 		assertEquals("Precio familia numerosa, primera matricula convalidacion, es precio por nº creditos por 0.5 por 0.5",15, m5.getPrecio(),0.0001);
 		
