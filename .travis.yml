@@ -8,7 +8,6 @@ script:
  - git checkout tags/original .travis.yml
  - git checkout tags/original pom.xml
  - git checkout tags/original src/test/java/TestsActividadPorCreditos.java
- - git checkout tags/original src/test/java/TestsActividadPorCreditos.java
  - git checkout tags/original src/test/java/TestsActividadPorNombre.java
  - git checkout tags/original src/test/java/TestsArrList.java
  - git checkout tags/original src/test/java/TestsAsignatura.java
