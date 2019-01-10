@@ -1,5 +1,3 @@
-
-
 public class Principal {
 	public static void main(String [] args) {
 		Estudiante Est1=new Estudiante("Es1",true);
@@ -13,27 +11,27 @@ public class Principal {
 		Estudiante Est9=new Estudiante("Es9",true);
 		Estudiante Est10=new Estudiante("Es10",false);
 		
-		Actividad Act1=new Actividad("act1",1);
-		Actividad Act2=new Actividad("act2",2);
-		Actividad Act3=new Actividad("act3",3);
-		Actividad Act4=new Actividad("act4",4);
-		Actividad Act5=new Actividad("act5",5);
-		Actividad Act6=new Actividad("act6",6);
-		Actividad Act7=new Actividad("act7",7);
-		Actividad Act8=new Actividad("act8",8);
-		Actividad Act9=new Actividad("act9",9);
-		Actividad Act10=new Actividad("act10",10);
+		Actividad Act1=new Reconocimiento("Prog1",60,"Programacion1");
+		Actividad Act2=new Reconocimiento("Prog2",60,"Programacion2");
+		Actividad Act3=new Reconocimiento("Prog3",60,"Programacion3");
+		Actividad Act4=new Reconocimiento("Prog4",60,"Programacion4");
+		Actividad Act5=new Reconocimiento("Prog5",60,"Programacion5");
+		Actividad Act6=new Reconocimiento("Prog6",60,"Programacion6");
+		Actividad Act7=new Reconocimiento("Prog7",60,"Programacion7");
+		Actividad Act8=new Reconocimiento("Prog8",60,"Programacion8");
+		Actividad Act9=new Reconocimiento("Prog9",60,"Programacion9");
+		Actividad Act10=new Reconocimiento("Prog10",60,"Programacion10");
 		
-		Matricula Matr1=new Matricula(Act1,Est1,Curso.C1819,OrdenMatricula.M1,1);
-		Matricula Matr2=new Matricula(Act2,Est2,Curso.C1718,OrdenMatricula.M1,2);
-		Matricula Matr3=new Matricula(Act3,Est3,Curso.C1920,OrdenMatricula.M2,3);
-		Matricula Matr4=new Matricula(Act4,Est4,Curso.C1718,OrdenMatricula.M2,4);
-		Matricula Matr5=new Matricula(Act5,Est5,Curso.C1718,OrdenMatricula.M1,5);
-		Matricula Matr6=new Matricula(Act6,Est6,Curso.C1617,OrdenMatricula.M4,6);
-		Matricula Matr7=new Matricula(Act7,Est7,Curso.C1718,OrdenMatricula.M1,7);
-		Matricula Matr8=new Matricula(Act8,Est8,Curso.C1718,OrdenMatricula.M3,8);
-		Matricula Matr9=new Matricula(Act9,Est9,Curso.C1617,OrdenMatricula.M1,9);
-		Matricula Matr10=new Matricula(Act10,Est10,Curso.C1718,OrdenMatricula.M1,10);
+		Matricula Mat1=new Matricula(Act1,Est1,Curso.C1819,OrdenMatricula.M1,1);
+		Matricula Mat2=new Matricula(Act2,Est2,Curso.C1718,OrdenMatricula.M1,2);
+		Matricula Mat3=new Matricula(Act3,Est3,Curso.C1920,OrdenMatricula.M2,3);
+		Matricula Mat4=new Matricula(Act4,Est4,Curso.C1718,OrdenMatricula.M2,4);
+		Matricula Mat5=new Matricula(Act5,Est5,Curso.C1718,OrdenMatricula.M1,5);
+		Matricula Mat6=new Matricula(Act6,Est6,Curso.C1617,OrdenMatricula.M4,6);
+		Matricula Mat7=new Matricula(Act7,Est7,Curso.C1718,OrdenMatricula.M1,7);
+		Matricula Mat8=new Matricula(Act8,Est8,Curso.C1718,OrdenMatricula.M3,8);
+		Matricula Mat9=new Matricula(Act9,Est9,Curso.C1617,OrdenMatricula.M1,9);
+		Matricula Mat10=new Matricula(Act10,Est10,Curso.C1718,OrdenMatricula.M1,10);
 		
 		Collection<Matricula> conjuntoporordenmatricula=new SortedSet<Matricula>(new MatriculaPorOrdenMatricula());
 		
@@ -43,49 +41,49 @@ public class Principal {
 		
 		Collection<Matricula> conjuntoporactividad=new SortedSet<Matricula>(new MatriculaPorNombreActividad());
 		
-		conjuntoporordenmatricula.add(Matr1);
-		conjuntoporordenmatricula.add(Matr2);
-		conjuntoporordenmatricula.add(Matr3);
-		conjuntoporordenmatricula.add(Matr4);
-		conjuntoporordenmatricula.add(Matr5);
-		conjuntoporordenmatricula.add(Matr6);
-		conjuntoporordenmatricula.add(Matr7);
-		conjuntoporordenmatricula.add(Matr8);
-		conjuntoporordenmatricula.add(Matr9);
-		conjuntoporordenmatricula.add(Matr10);
+		conjuntoporordenmatricula.add(Mat1);
+		conjuntoporordenmatricula.add(Mat2);
+		conjuntoporordenmatricula.add(Mat3);
+		conjuntoporordenmatricula.add(Mat4);
+		conjuntoporordenmatricula.add(Mat5);
+		conjuntoporordenmatricula.add(Mat6);
+		conjuntoporordenmatricula.add(Mat7);
+		conjuntoporordenmatricula.add(Mat8);
+		conjuntoporordenmatricula.add(Mat9);
+		conjuntoporordenmatricula.add(Mat10);
 
-		conjuntoporcurso.add(Matr1);
-		conjuntoporcurso.add(Matr2);
-		conjuntoporcurso.add(Matr3);
-		conjuntoporcurso.add(Matr4);
-		conjuntoporcurso.add(Matr5);
-		conjuntoporcurso.add(Matr6);
-		conjuntoporcurso.add(Matr7);
-		conjuntoporcurso.add(Matr8);
-		conjuntoporcurso.add(Matr9);
-		conjuntoporcurso.add(Matr10);
+		conjuntoporcurso.add(Mat1);
+		conjuntoporcurso.add(Mat2);
+		conjuntoporcurso.add(Mat3);
+		conjuntoporcurso.add(Mat4);
+		conjuntoporcurso.add(Mat5);
+		conjuntoporcurso.add(Mat6);
+		conjuntoporcurso.add(Mat7);
+		conjuntoporcurso.add(Mat8);
+		conjuntoporcurso.add(Mat9);
+		conjuntoporcurso.add(Mat10);
 		
-		conjuntoporestudiante.add(Matr1);
-		conjuntoporestudiante.add(Matr2);
-		conjuntoporestudiante.add(Matr3);
-		conjuntoporestudiante.add(Matr4);
-		conjuntoporestudiante.add(Matr5);
-		conjuntoporestudiante.add(Matr6);
-		conjuntoporestudiante.add(Matr7);
-		conjuntoporestudiante.add(Matr8);
-		conjuntoporestudiante.add(Matr9);
-		conjuntoporestudiante.add(Matr10);
+		conjuntoporestudiante.add(Mat1);
+		conjuntoporestudiante.add(Mat2);
+		conjuntoporestudiante.add(Mat3);
+		conjuntoporestudiante.add(Mat4);
+		conjuntoporestudiante.add(Mat5);
+		conjuntoporestudiante.add(Mat6);
+		conjuntoporestudiante.add(Mat7);
+		conjuntoporestudiante.add(Mat8);
+		conjuntoporestudiante.add(Mat9);
+		conjuntoporestudiante.add(Mat10);
 		
-		conjuntoporactividad.add(Matr1);
-		conjuntoporactividad.add(Matr2);
-		conjuntoporactividad.add(Matr3);
-		conjuntoporactividad.add(Matr4);
-		conjuntoporactividad.add(Matr5);
-		conjuntoporactividad.add(Matr6);
-		conjuntoporactividad.add(Matr7);
-		conjuntoporactividad.add(Matr8);
-		conjuntoporactividad.add(Matr9);
-		conjuntoporactividad.add(Matr10);
+		conjuntoporactividad.add(Mat1);
+		conjuntoporactividad.add(Mat2);
+		conjuntoporactividad.add(Mat3);
+		conjuntoporactividad.add(Mat4);
+		conjuntoporactividad.add(Mat5);
+		conjuntoporactividad.add(Mat6);
+		conjuntoporactividad.add(Mat7);
+		conjuntoporactividad.add(Mat8);
+		conjuntoporactividad.add(Mat9);
+		conjuntoporactividad.add(Mat10);
 		
 		System.out.println(conjuntoporordenmatricula.toString());
 		
